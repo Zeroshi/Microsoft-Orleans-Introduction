@@ -65,15 +65,15 @@ namespace Introduction
             Console.WriteLine("Start Reminder Grain? Y/N");
             if (Console.ReadLine()?.ToUpper() == "Y")
             {
-                IReminderGrain reminderGrain = client.GetGrain<IReminderGrain>(Guid.Empty);
-                await reminderGrain.Start();
+                IReminderGrain reminderGrain = client.GetGrain<IReminderGrain>("reminderAction");
+                await reminderGrain.SendMessage();
             }
 
             Console.WriteLine("Stop Reminder Grain? Y/N");
             if (Console.ReadLine()?.ToUpper() == "Y")
             {
-                IReminderGrain reminderGrain = client.GetGrain<IReminderGrain>(Guid.Empty);
-                await reminderGrain.Start();
+                IReminderGrain reminderGrain = client.GetGrain<IReminderGrain>("reminderAction");
+                await reminderGrain.StopMessage();
             }
 
             Console.WriteLine("Start timer Grain? Y/N");

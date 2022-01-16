@@ -3,9 +3,9 @@ using Orleans;
 
 namespace GrainInterfaces
 {
-    public interface IReminderGrain : IGrainWithGuidKey, IRemindable
+    public interface IReminderGrain : IGrainWithStringKey, IRemindable
     {
-        Task Start();
-        Task Stop();
+        Task SendMessage();
+        Task StopMessage();
     }
 }
