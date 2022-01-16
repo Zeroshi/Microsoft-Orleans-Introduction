@@ -31,7 +31,7 @@ namespace Introduction
             return RegisterOrUpdateReminder(ReminderName, TimeSpan.FromMinutes(30), TimeSpan.FromHours(1));
         }
 
-        //Register the reminder to intially start in 30 min and 1 hour thereafter
+        //Unregister the reminder
         public async Task StopMessage()
         {
             foreach (var reminder in await GetReminders())
