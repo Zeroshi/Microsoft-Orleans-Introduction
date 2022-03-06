@@ -41,8 +41,6 @@ namespace Introduction
                     await UnregisterReminder(reminder);
                 }
             }
-
-
         }
     }
 }

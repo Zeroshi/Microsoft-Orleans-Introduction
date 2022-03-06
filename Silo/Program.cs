@@ -44,7 +44,7 @@ namespace Introduction
                 .Configure<ClusterOptions>(options =>
                 {
                     options.ClusterId = "dev";
-                    options.ServiceId = "OrleansBasics";
+                    options.ServiceId = "orleansbasics";
                 })
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(TutorialGrain).Assembly).WithReferences())
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(UnitTestingGrain).Assembly).WithReferences())
@@ -62,35 +62,6 @@ namespace Introduction
             await host.StartAsync();
             return host;
         }
-
-        //private static async Task<ISiloHost> StartSilo()
-        //{
-        //    // define the cluster configuration
-        //    var builder = new SiloHostBuilder()
-        //     .UseLocalhostClustering()
-        //     .Configure<ClusterOptions>(options =>
-        //     {
-        //         options.ClusterId = "dev";
-        //         options.ServiceId = "HelloWorldApp";
-        //     })
-        //     .Configure<EndpointOptions>(options => options.AdvertisedIPAddress = IPAddress.Loopback)
-        //     .AddMemoryGrainStorage(Constants.OrleansMemoryProvider)
-        //     .ConfigureApplicationParts(parts =>
-        //     {
-        //         parts.AddApplicationPart(typeof(TutorialGrain).Assembly).WithReferences();
-        //         parts.AddApplicationPart(typeof(UnitTestingGrain).Assembly).WithReferences();
-        //         parts.AddApplicationPart(typeof(CallingGrain).Assembly).WithReferences();
-        //         parts.AddApplicationPart(typeof(TimerGrain).Assembly).WithReferences();
-        //         parts.AddApplicationPart(typeof(ReminderGrain).Assembly).WithReferences();
-        //     })
-        //     .ConfigureServices(DependencyInjectionHelper.IocContainerRegistration)
-        //     .UseDashboard(options => { })
-        //     .UseInMemoryReminderService()
-        //     .ConfigureLogging(logging => logging.AddConsole());
-        //    var host = builder.Build();
-        //    await host.StartAsync();
-        //    return host;
-        //}
     }
 }
 
