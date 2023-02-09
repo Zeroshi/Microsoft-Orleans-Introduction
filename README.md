@@ -1,5 +1,7 @@
 # Microsoft-Orleans-Introduction
-### Apress Introduction to Microsoft Orleans Application
+### Apress Introduction to Microsoft Orleans: *Application Code*
+
+![Introducing Microsoft Orleans](https://m.media-amazon.com/images/I/41ylB-BvGRL._SX348_BO1,204,203,200_.jpg)
 
 Book Location: [Amazon](https://smile.amazon.com/Introducing-Microsoft-Orleans-Implementing-Cloud-Native/dp/148428013X/?_encoding=UTF8&pd_rd_w=yqf4H&content-id=amzn1.sym.bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&pf_rd_r=2RX4T1X4N7KJBF5GRRBP&pd_rd_wg=hqd2O&pd_rd_r=603703a9-b1d2-4518-a028-e92fabfa733e&ref_=pd_gw_ci_mcx_mi) | [Spring Link](https://link.springer.com/book/10.1007/978-1-4842-8014-0?sap-outbound-id=97740A0BE40E549A28B990CB5DF363FAABC7BB12)
 
